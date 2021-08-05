@@ -1,3 +1,185 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
+
+/* -----------------------Header Start------------------------- */
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.football-header-section{
+    background-color: rgb(25, 122, 126);
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.conatiner{
+    width: 1400px;
+    /* border: 1px solid; */
+}
+
+.football-header-banner{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+h1{
+    font-size: 80px;
+    color: white;
+}
+.watch-live-button{
+    text-decoration:none ;
+    background-color:rgb(247, 71, 123);
+    display: inline;
+    color: white;
+    padding: 10px 40px 10px 40px;
+    border-radius: 5px;
+}
+.fa-arrow-right{
+    margin-left: 10px;
+    font-size: 18px;
+}
+.header-banner-image img{
+    width: 600px;
+}
+
+/* -----------------------Header End */
+
+
+/* -------------------------Main Start------------------------- */
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.players{
+    width: 1500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    
+}
+
+.first-section-player{
+    margin-top: 50px;
+    width: 450px;
+    box-shadow: 0 4px 8px 0 rgb(216, 216, 216);
+    border-radius: 10px;
+}
+
+.first-section-player img{
+    padding-top: 20px;
+    width: 410px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.player-details{
+    padding: 20px;
+}
+
+/* -------------------------Main End--------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==============================Media Queries============================= */
+
+/* ========================================   Mobile Device   ========================== */
+@media screen and (max-width:688px) {
+    .conatiner{
+        width: 100%;
+    }
+    h1{
+        font-size: 45px;
+        margin-left: 30px;
+    }
+    .watch-live-button{
+       margin-left: 30px;
+    }
+    .football-header-banner{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .header-banner-image img{
+        max-width: 100%;
+        margin-top: 50px;
+    }
+
+
+    /* ------------------------first section Player Start---------- */
+    .players{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .first-section-player{
+       width: 350px;
+       margin: auto;
+       margin-top: 20px;
+    }
+
+    .player-images  img {
+        max-width: 90%;
+    }
+    /* ------------------------first Section Player End--------- */
+
+}
+
+
+
+/* ========================================   Tablet Device   ========================== */
+
+@media screen and (min-width: 688px) and (max-width:992px) {
+    /* ---------Header section start--------- */
+    .conatiner{
+        width: 100%;
+    }
+    h1{
+        font-size: 45px;
+        margin-left: 30px;
+    }
+    .watch-live-button{
+       margin-left: 30px;
+    }
+    .football-header-banner{
+        grid-template-columns: repeat(2,2fr);
+    }
+    .header-banner-image img{
+        max-width: 100%;
+        margin-top: 50px;
+    }
+    /* ---------Header section end---------- */
+
+
+    /* ---------------------First Section Player Start------------ */
+
+    .players{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .first-section-player{
+       width: 300px;
+       margin: auto;
+       margin-top: 20px;
+    }
+
+    .player-images  img {
+        max-width: 90%;
+    }
+    /* ---------------------First Section Player end-------------- */
+}
