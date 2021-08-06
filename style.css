@@ -14,7 +14,7 @@ header{
     padding-bottom: 100px;
 }
 
-.conatiner{
+.container{
     width: 1400px;
     /* border: 1px solid; */
 }
@@ -57,7 +57,7 @@ main{
 
 
 .players{
-    width: 1500px;
+    width: 1400px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
@@ -66,14 +66,15 @@ main{
 
 .first-section-player{
     margin-top: 50px;
-    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 430px;
     box-shadow: 0 4px 8px 0 rgb(216, 216, 216);
-    border-radius: 10px;
 }
 
 .first-section-player img{
-    padding-top: 20px;
-    width: 410px;
+    padding-top: 17px;
+    width: 400px;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -82,6 +83,35 @@ main{
 .player-details{
     padding: 20px;
 }
+
+
+
+
+/* --------------Main / Section - 2 start------------- */
+#main-section-2{
+    width: 1362px;
+    margin-top: 50px;
+}
+
+.second-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.second-section-title{
+    width: 550px;
+    padding: 20px;
+}
+.second-section-title h1{
+    font-size: 50px;
+    color: coral;
+}
+
+
+/* -------------Main / Section - 2 End--------------- */
+
+
 
 /* -------------------------Main End--------------------------- */
 
@@ -98,10 +128,7 @@ main{
 
 
 
-
-
-
-/* ==============================Media Queries============================= */
+/* ============================== Media Queries ============================= */
 
 /* ========================================   Mobile Device   ========================== */
 @media screen and (max-width:688px) {
